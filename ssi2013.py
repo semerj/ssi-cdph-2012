@@ -6,9 +6,9 @@ import re
 import os
 import glob
 
-def main(file):
+def main(doc):
     pages = []
-    with open(file, 'r') as inputfile:
+    with open(doc, 'r') as inputfile:
 	fx = lambda x:re.search(r'Page \d+ of \d+', x)
 	for k, g in groupby(inputfile, key=fx):
 	    if not k:
