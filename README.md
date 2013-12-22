@@ -11,3 +11,5 @@ You'll need:
 * [qpdf](http://qpdf.sourceforge.net/) for decryption
 * [pdftotext](http://www.bluem.net/en/mac/packages/) for text conversion and document layout preservation
 * [Pandas](http://pandas.pydata.org/) for data munging
+
+Make sure both `dostuff.sh` and `ssi2012.py` are in the same directory, and then run `dostuff.sh`. Boom.
