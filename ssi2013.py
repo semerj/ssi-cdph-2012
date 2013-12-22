@@ -34,7 +34,7 @@ def main(doc):
     del data['ci']
     data = data[['hosp', 'procs', 'procCount', 'infCount', 'sir', 'ci-low', 'ci-high', 'comp']]
     
-    data.to_csv(str(file.split('.')[0]) + '.csv', index=False)
+    data.to_csv(str(doc.split('.')[0]) + '.csv', index=False)
 
 if __name__ == "__main__":
     txt_files = glob.glob('*.txt')
